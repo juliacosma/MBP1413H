@@ -3,11 +3,13 @@
 
 # %%
 # imports
-
+import datetime
 import os, io, json, warnings, gc, shutil, re, platform
 from copy import deepcopy
 from pathlib import Path
 warnings.filterwarnings("ignore")
+
+import fsspec
 
 import numpy as np
 import pandas as pd
@@ -40,11 +42,17 @@ torch.manual_seed(SEED)
 np.random.seed(SEED)
 
 # %%
-# outputs
-WORK_DIR    = Path.cwd() / "tms_fmri_project"
+# --- outputs ---
+# Generate a unique string with the current date and time (e.g., 20260401_153022)
+timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+
+# Append the timestamp to your main project folder
+WORK_DIR    = Path.cwd() / f"tms_fmri_project_{timestamp}"
+
 MAPS_DIR    = WORK_DIR / "response_maps"  
-TEMP_DIR    = WORK_DIR / "temp_nifti"      # raw NIfTIs deleted after use
+TEMP_DIR    = WORK_DIR / "temp_nifti"      
 RESULTS_DIR = WORK_DIR / "results"
+
 for d in [WORK_DIR, MAPS_DIR, TEMP_DIR, RESULTS_DIR]:
     d.mkdir(parents=True, exist_ok=True)
 
@@ -91,8 +99,9 @@ print(f"Work dir     : {WORK_DIR}")
 # For dealing with downloading and deleting files.
 
 # %%
-def get_s3() -> s3fs.S3FileSystem:
-    return s3fs.S3FileSystem(anon=True)
+def get_s3():
+    # Swap out S3 for the local file system
+    return fsspec.filesystem("file")
 
 def s3_ls(fs, prefix: str) -> list:
     try:
@@ -114,7 +123,7 @@ def extract_task(fname: str):
     return m.group(1) if m else None
 
 fs  = get_s3()
-pfx = f"{S3_BUCKET}/{DATASET_ID}"
+pfx = f"/scratch/{os.environ.get('USER')}/{S3_BUCKET}/{DATASET_ID}"
 top = s3_ls(fs, pfx)
 print(f"✓ Connected — top-level entries under s3://{pfx}: {len(top)}")
 
