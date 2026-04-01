@@ -12,13 +12,8 @@ module load StdEnv/2023
 module load python/3.11
 module load arrow/15.0.1
 
-# 2. create + activate venv
-virtualenv --no-download ~/tms_env
+# 2. activate venv (Do NOT use --no-download or virtualenv here anymore)
 source ~/tms_env/bin/activate
 
-# 3. install python packages
-pip install --no-index --upgrade pip
-pip install monai s3fs nibabel pandas seaborn scikit-learn tqdm scipy
-
-# 4. run code!
+# 3. run code!
 python tms-fmri-classifier-narval.py

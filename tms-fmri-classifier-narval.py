@@ -182,6 +182,8 @@ print(participants_df["sex_num"].value_counts())
 all_sids = participants_df["subject_id"].values
 all_labs = participants_df["label"].values
 
+TEST_FRAC = 0.2
+
 TRAIN_SIDS, TEST_SIDS, _, _ = train_test_split(
     all_sids, all_labs,
     test_size=TEST_FRAC,
