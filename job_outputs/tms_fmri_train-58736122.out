@@ -1,0 +1,1641 @@
+Data and results will be saved to: /home/cosma/tms_fmri_project_20260402_004320
+Device       : cuda
+TARGET_SHAPE : (96, 96, 72)
+BATCH_SIZE   : 16
+Work dir     : /home/cosma/tms_fmri_project_20260402_004320
+✓ Connected — top-level entries under s3:///scratch/cosma/openneuro.org/ds005498: 153
+Raw shape: (152, 51)
+  participant_id  Gender  ...  L-aMFG Scan ( Minus32x42x34)  Resting Scan
+0   sub-NTHC1001       2  ...                             0             1
+1   sub-NTHC1003       2  ...                             0             1
+2   sub-NTHC1009       2  ...                             1             1
+
+[3 rows x 51 columns]
+
+Group distribution:
+group
+NTHC    46
+NTS     43
+NIS     34
+TEHC    29
+Name: count, dtype: int64
+
+Sex numeric distribution:
+sex_num
+0.0    93
+1.0    58
+0.5     1
+Name: count, dtype: int64
+Total     : 152
+Train     : 121  (80%)
+Test      : 31   (20%)
+
+Train distribution:
+group
+NTHC    38
+NTS     33
+NIS     30
+TEHC    20
+
+Test distribution:
+group
+NTS     10
+TEHC     9
+NTHC     8
+NIS      4
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1001/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1001/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1003/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1003/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1009/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1009/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1015/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1015/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1016/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1016/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1019/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1019/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1021/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1021/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1022/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1022/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1023/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1023/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1024/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1024/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1026/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1026/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1027/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1027/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1028/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1028/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1029/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1029/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1032/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1032/func'
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1035/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1035/func'
+
+TMS site -> channel index (11 sites):
+  [ 0] stim24x60xMinus2
+  [ 1] stim30x50x26
+  [ 2] stim34x6x62
+  [ 3] stim40xMinus18x64
+  [ 4] stim46x26x38
+  [ 5] stim48xMinus54x46
+  [ 6] stim50x10x28
+  [ 7] stim6x2x70
+  [ 8] stimMinus24x60xMinus2
+  [ 9] stimMinus32x42x34
+  [10] stimMinus38x22x48
+Preprocessing 152 subjects (skipping already-done) …
+
+Subjects:   0%|          | 0/152 [00:00<?, ?it/s]Subjects:   1%|          | 1/152 [00:00<01:15,  2.01it/s]Subjects:   1%|▏         | 2/152 [00:00<01:12,  2.07it/s]Subjects:   2%|▏         | 3/152 [00:21<24:23,  9.82s/it]Subjects:   3%|▎         | 4/152 [00:26<19:32,  7.92s/it]Subjects:   3%|▎         | 5/152 [00:40<24:47, 10.12s/it]Subjects:   4%|▍         | 6/152 [00:45<19:42,  8.10s/it]Subjects:   5%|▍         | 7/152 [00:48<15:40,  6.48s/it]Subjects:   5%|▌         | 8/152 [00:52<13:39,  5.69s/it]Subjects:   6%|▌         | 9/152 [00:54<11:21,  4.76s/it]Subjects:   7%|▋         | 10/152 [01:08<17:21,  7.34s/it]Subjects:   7%|▋         | 11/152 [01:17<18:37,  7.92s/it]Subjects:   8%|▊         | 12/152 [01:24<18:05,  7.76s/it]Subjects:   9%|▊         | 13/152 [01:52<31:59, 13.81s/it]Subjects:   9%|▉         | 14/152 [02:08<33:34, 14.59s/it]Subjects:  10%|▉         | 15/152 [02:38<43:25, 19.02s/it]Subjects:  11%|█         | 16/152 [02:44<34:42, 15.31s/it]Subjects:  11%|█         | 17/152 [03:06<38:58, 17.32s/it]Subjects:  12%|█▏        | 18/152 [03:18<35:12, 15.77s/it]Subjects:  12%|█▎        | 19/152 [03:36<36:02, 16.26s/it]Subjects:  13%|█▎        | 20/152 [03:58<39:53, 18.13s/it]Subjects:  14%|█▍        | 21/152 [05:20<1:21:11, 37.19s/it]Subjects:  14%|█▍        | 22/152 [05:30<1:02:53, 29.02s/it]Subjects:  15%|█▌        | 23/152 [05:42<51:37, 24.01s/it]  Subjects:  16%|█▌        | 24/152 [05:56<44:35, 20.90s/it]Subjects:  16%|█▋        | 25/152 [06:08<38:29, 18.18s/it]Subjects:  17%|█▋        | 26/152 [06:17<32:17, 15.38s/it]Subjects:  18%|█▊        | 27/152 [06:27<29:04, 13.95s/it]Subjects:  18%|█▊        | 28/152 [06:42<29:10, 14.12s/it]Subjects:  19%|█▉        | 29/152 [06:52<26:19, 12.84s/it]Subjects:  20%|█▉        | 30/152 [06:57<21:38, 10.64s/it]Subjects:  20%|██        | 31/152 [07:09<22:16, 11.05s/it]Subjects:  21%|██        | 32/152 [07:32<28:58, 14.49s/it]Subjects:  22%|██▏       | 33/152 [07:56<34:48, 17.55s/it]Subjects:  22%|██▏       | 34/152 [08:02<27:34, 14.02s/it]Subjects:  23%|██▎       | 35/152 [08:10<23:49, 12.22s/it]Subjects:  24%|██▎       | 36/152 [08:23<23:54, 12.36s/it]Subjects:  24%|██▍       | 37/152 [08:37<24:42, 12.89s/it]Subjects:  25%|██▌       | 38/152 [08:38<17:37,  9.28s/it]Subjects:  26%|██▌       | 39/152 [08:39<12:40,  6.73s/it]Subjects:  26%|██▋       | 40/152 [08:55<18:02,  9.67s/it]Subjects:  27%|██▋       | 41/152 [09:05<18:07,  9.79s/it]Subjects:  28%|██▊       | 42/152 [09:15<18:01,  9.83s/it]Subjects:  28%|██▊       | 43/152 [09:34<22:32, 12.41s/it]Subjects:  29%|██▉       | 44/152 [09:52<25:39, 14.25s/it]Subjects:  30%|██▉       | 45/152 [10:45<46:14, 25.93s/it]Subjects:  30%|███       | 46/152 [10:56<37:50, 21.42s/it]Subjects:  31%|███       | 47/152 [10:57<26:36, 15.21s/it]Subjects:  32%|███▏      | 48/152 [10:57<18:44, 10.82s/it]Subjects:  32%|███▏      | 49/152 [10:58<13:21,  7.78s/it]Subjects:  33%|███▎      | 50/152 [11:09<14:47,  8.70s/it]Subjects:  34%|███▎      | 51/152 [11:22<16:46,  9.97s/it]Subjects:  34%|███▍      | 52/152 [11:38<19:53, 11.93s/it]Subjects:  35%|███▍      | 53/152 [11:48<18:20, 11.12s/it]Subjects:  36%|███▌      | 54/152 [11:57<17:17, 10.58s/it]Subjects:  36%|███▌      | 55/152 [12:08<17:31, 10.84s/it]Subjects:  37%|███▋      | 56/152 [12:18<16:52, 10.55s/it]Subjects:  38%|███▊      | 57/152 [12:26<15:14,  9.63s/it]Subjects:  38%|███▊      | 58/152 [12:35<15:03,  9.61s/it]Subjects:  39%|███▉      | 59/152 [12:58<20:44, 13.39s/it]Subjects:  39%|███▉      | 60/152 [13:05<17:51, 11.65s/it]Subjects:  40%|████      | 61/152 [13:18<18:01, 11.89s/it]Subjects:  41%|████      | 62/152 [13:30<18:11, 12.13s/it]Subjects:  41%|████▏     | 63/152 [13:42<17:38, 11.89s/it]Subjects:  42%|████▏     | 64/152 [13:52<16:43, 11.41s/it]Subjects:  43%|████▎     | 65/152 [14:02<15:54, 10.97s/it]Subjects:  43%|████▎     | 66/152 [14:13<15:51, 11.07s/it]Subjects:  44%|████▍     | 67/152 [14:20<13:57,  9.86s/it]Subjects:  45%|████▍     | 68/152 [14:21<09:53,  7.07s/it]Subjects:  45%|████▌     | 69/152 [14:42<15:36, 11.28s/it]Subjects:  46%|████▌     | 70/152 [14:43<11:08,  8.15s/it]Subjects:  47%|████▋     | 71/152 [14:51<11:14,  8.33s/it]Subjects:  47%|████▋     | 72/152 [14:59<10:50,  8.14s/it]Subjects:  48%|████▊     | 73/152 [15:23<17:03, 12.96s/it]Subjects:  49%|████▊     | 74/152 [15:33<15:45, 12.12s/it]Subjects:  49%|████▉     | 75/152 [15:42<14:17, 11.14s/it]Subjects:  50%|█████     | 76/152 [15:43<10:10,  8.03s/it]Subjects:  51%|█████     | 77/152 [15:50<09:40,  7.74s/it]Subjects:  51%|█████▏    | 78/152 [15:57<09:17,  7.54s/it]Subjects:  52%|█████▏    | 79/152 [16:05<09:13,  7.59s/it]Subjects:  53%|█████▎    | 80/152 [16:10<08:17,  6.91s/it]Subjects:  53%|█████▎    | 81/152 [16:22<09:58,  8.43s/it]Subjects:  54%|█████▍    | 82/152 [16:31<10:06,  8.66s/it]Subjects:  55%|█████▍    | 83/152 [16:39<09:27,  8.23s/it]Subjects:  55%|█████▌    | 84/152 [16:46<08:58,  7.92s/it]Subjects:  56%|█████▌    | 85/152 [16:54<08:55,  8.00s/it]Subjects:  57%|█████▋    | 86/152 [17:04<09:31,  8.66s/it]Subjects:  57%|█████▋    | 87/152 [17:12<09:05,  8.39s/it]Subjects:  58%|█████▊    | 88/152 [17:26<10:37,  9.97s/it]Subjects:  59%|█████▊    | 89/152 [17:38<11:06, 10.58s/it]Subjects:  59%|█████▉    | 90/152 [17:42<08:53,  8.61s/it]Subjects:  60%|█████▉    | 91/152 [17:57<10:56, 10.77s/it]Subjects:  61%|██████    | 92/152 [18:07<10:29, 10.50s/it]Subjects:  61%|██████    | 93/152 [18:17<10:01, 10.19s/it]Subjects:  62%|██████▏   | 94/152 [18:30<10:40, 11.05s/it]Subjects:  62%|██████▎   | 95/152 [18:52<13:41, 14.41s/it]Subjects:  63%|██████▎   | 96/152 [19:02<12:09, 13.03s/it]Subjects:  64%|██████▍   | 97/152 [19:11<10:56, 11.93s/it]Subjects:  64%|██████▍   | 98/152 [19:26<11:24, 12.67s/it]Subjects:  65%|██████▌   | 99/152 [21:33<41:31, 47.01s/it]Subjects:  66%|██████▌   | 100/152 [21:54<33:56, 39.16s/it]Subjects:  66%|██████▋   | 101/152 [22:23<30:46, 36.21s/it]Subjects:  67%|██████▋   | 102/152 [22:31<23:06, 27.73s/it]Subjects:  68%|██████▊   | 103/152 [22:44<19:07, 23.42s/it]Subjects:  68%|██████▊   | 104/152 [23:06<18:23, 22.99s/it]Subjects:  69%|██████▉   | 105/152 [23:21<15:57, 20.37s/it]Subjects:  70%|██████▉   | 106/152 [23:27<12:27, 16.24s/it]Subjects:  70%|███████   | 107/152 [23:38<11:00, 14.67s/it]Subjects:  71%|███████   | 108/152 [24:01<12:38, 17.24s/it]Subjects:  72%|███████▏  | 109/152 [24:18<12:18, 17.17s/it]Subjects:  72%|███████▏  | 110/152 [24:36<12:07, 17.32s/it]Subjects:  73%|███████▎  | 111/152 [25:07<14:38, 21.44s/it]Subjects:  74%|███████▎  | 112/152 [25:23<13:12, 19.82s/it]Subjects:  74%|███████▍  | 113/152 [25:35<11:22, 17.49s/it]Subjects:  75%|███████▌  | 114/152 [25:44<09:21, 14.78s/it]Subjects:  76%|███████▌  | 115/152 [25:53<08:04, 13.11s/it]Subjects:  76%|███████▋  | 116/152 [26:01<07:03, 11.76s/it]Subjects:  77%|███████▋  | 117/152 [26:04<05:09,  8.86s/it]Subjects:  78%|███████▊  | 118/152 [26:05<03:47,  6.69s/it]Subjects:  78%|███████▊  | 119/152 [26:17<04:33,  8.28s/it]Subjects:  79%|███████▉  | 120/152 [26:24<04:11,  7.87s/it]Subjects:  80%|███████▉  | 121/152 [26:37<04:50,  9.36s/it]Subjects:  80%|████████  | 122/152 [26:48<04:58,  9.94s/it]Subjects:  81%|████████  | 123/152 [27:06<06:00, 12.43s/it]Subjects:  82%|████████▏ | 124/152 [27:17<05:31, 11.82s/it]Subjects:  82%|████████▏ | 125/152 [27:28<05:11, 11.52s/it]Subjects:  83%|████████▎ | 126/152 [27:36<04:34, 10.57s/it]Subjects:  84%|████████▎ | 127/152 [27:42<03:52,  9.32s/it]Subjects:  84%|████████▍ | 128/152 [27:52<03:42,  9.26s/it]Subjects:  85%|████████▍ | 129/152 [28:00<03:26,  8.98s/it]Subjects:  86%|████████▌ | 130/152 [28:08<03:09,  8.60s/it]Subjects:  86%|████████▌ | 131/152 [28:15<02:54,  8.30s/it]Subjects:  87%|████████▋ | 132/152 [28:25<02:56,  8.82s/it]Subjects:  88%|████████▊ | 133/152 [28:39<03:17, 10.42s/it]Subjects:  88%|████████▊ | 134/152 [28:57<03:47, 12.63s/it]Subjects:  89%|████████▉ | 135/152 [29:12<03:45, 13.24s/it]Subjects:  89%|████████▉ | 136/152 [29:23<03:20, 12.55s/it]Subjects:  90%|█████████ | 137/152 [29:48<04:04, 16.33s/it]Subjects:  91%|█████████ | 138/152 [29:50<02:47, 12.00s/it]Subjects:  91%|█████████▏| 139/152 [29:57<02:18, 10.66s/it]Subjects:  92%|█████████▏| 140/152 [30:02<01:45,  8.82s/it]Subjects:  93%|█████████▎| 141/152 [30:12<01:42,  9.27s/it]Subjects:  93%|█████████▎| 142/152 [30:28<01:53, 11.34s/it]Subjects:  94%|█████████▍| 143/152 [30:56<02:25, 16.20s/it]Subjects:  95%|█████████▍| 144/152 [31:10<02:04, 15.52s/it]Subjects:  95%|█████████▌| 145/152 [31:21<01:39, 14.28s/it]Subjects:  96%|█████████▌| 146/152 [31:38<01:29, 14.90s/it]Subjects:  97%|█████████▋| 147/152 [31:47<01:06, 13.32s/it]Subjects:  97%|█████████▋| 148/152 [32:10<01:04, 16.05s/it]Subjects:  98%|█████████▊| 149/152 [32:19<00:42, 14.12s/it]Subjects:  99%|█████████▊| 150/152 [32:33<00:27, 13.89s/it]Subjects:  99%|█████████▉| 151/152 [32:56<00:16, 16.77s/it]Subjects: 100%|██████████| 152/152 [33:11<00:00, 16.14s/it]Subjects: 100%|██████████| 152/152 [33:11<00:00, 13.10s/it]
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1001/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1001/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1003/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1003/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1009/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1009/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1015/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1015/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1016/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1016/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1019/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1019/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1021/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1021/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1022/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1022/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1023/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1023/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1024/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1024/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1026/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1026/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1027/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1027/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1028/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1028/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1029/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1029/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1032/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1032/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1035/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1035/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1036/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1036/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1037/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1037/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1038/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1038/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1039/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1039/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1040/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1040/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1043/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1043/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1047/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1047/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1049/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1049/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1050/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1050/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1052/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1052/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1053/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1053/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1055/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1055/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1056/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1056/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1057/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1057/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1061/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1061/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1062/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1062/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1064/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1064/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1065/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1065/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1066/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1066/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1068/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1068/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1073/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1073/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1075/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1075/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1097/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1097/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1098/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1098/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1099/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1099/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1101/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1101/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1102/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1102/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1105/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1105/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1107/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1107/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1108/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1108/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2001/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2001/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2002/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2002/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2010/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2010/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2022/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2022/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2026/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2026/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2040/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2040/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2043/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2043/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2044/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2044/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2047/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2047/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2048/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2048/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2053/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2053/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2062/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2062/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2064/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2064/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2066/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2066/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2069/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2069/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2070/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2070/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2074/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2074/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2075/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2075/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2076/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2076/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2079/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2079/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2083/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2083/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2090/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2090/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2093/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2093/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2096/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2096/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2102/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2102/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2103/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2103/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2104/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2104/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2105/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2105/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TEHC2108/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TEHC2108/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3006/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3006/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3019/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3019/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3020/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3020/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3022/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3022/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3023/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3023/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3026/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3026/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3029/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3029/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3031/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3031/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3037/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3037/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3045/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3045/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3046/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3046/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3051/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3051/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3053/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3053/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3055/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3055/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3056/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3056/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3058/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3058/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3065/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3065/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3072/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3072/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3074/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3074/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3077/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3077/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3079/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3079/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3083/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3083/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3084/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3084/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3086/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3086/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3088/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3088/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3089/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3089/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3090/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3090/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3091/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3091/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3093/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3093/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3094/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3094/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3095/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3095/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3096/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3096/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3097/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3097/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3098/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3098/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3099/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3099/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3101/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3101/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3102/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3102/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3103/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3103/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3107/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3107/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3108/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3108/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3109/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3109/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3115/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3115/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTS3116/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTS3116/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4025/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4025/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4039/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4039/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4042/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4042/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4044/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4044/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4048/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4048/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4049/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4049/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4050/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4050/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4052/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4052/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4056/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4056/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4068/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4068/func'
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4072/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4072/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4077/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4077/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4088/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4088/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4089/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4089/func'
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4096/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4096/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4105/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4105/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4113/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4113/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4117/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4117/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4120/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4120/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4121/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4121/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4127/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4127/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4135/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4135/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4136/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4136/func'
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4147/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4147/func'
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4161/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4161/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4166/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4166/func'
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4167/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4167/func'
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4175/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4175/func'
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4177/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4177/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4178/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4178/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4182/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4182/func'
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4199/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4199/func'
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4203/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4203/func'
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim6x2x70: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim48xMinus54x46: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-TIS4206/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-TIS4206/func'
+      warn stim50x10x28: no events.tsv, using estimated timings
+      warn stim34x6x62: no events.tsv, using estimated timings
+      warn stim40xMinus18x64: no events.tsv, using estimated timings
+      warn stim46x26x38: no events.tsv, using estimated timings
+      warn stim24x60xMinus2: no events.tsv, using estimated timings
+      warn stim30x50x26: no events.tsv, using estimated timings
+      warn stimMinus24x60xMinus2: no events.tsv, using estimated timings
+      warn stimMinus38x22x48: no events.tsv, using estimated timings
+      warn stimMinus32x42x34: no events.tsv, using estimated timings
+
+✅ Done. 152 subjects with ≥1 map.
+   Sites per subject — mean 9.2, min 1, max 11
+Fetching data for sub-NTHC1001 - stim46x26x38...
+  [s3_ls] /scratch/cosma/openneuro.org/ds005498/sub-NTHC1001/func: [Errno 2] No such file or directory: '/scratch/cosma/openneuro.org/ds005498/sub-NTHC1001/func'
+Ready to train with 121 train subjects and 31 test subjects
+Traceback (most recent call last):
+  File "/home/cosma/BINARYCLASS-tms-fmri-classifier-narval.py", line 545, in <module>
+    sample_img = sample_batch["image"][0, 0].cpu().numpy() # Grab first image in batch
+                 ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'image'

@@ -1,0 +1,34 @@
+/localscratch/spool/slurmd/job58678609/slurm_script: line 17: /home/cosma/tms_env/bin/activate: No such file or directory
+Data and results will be saved to: /home/cosma/tms_fmri_project_20260401_143445
+Device       : cuda
+TARGET_SHAPE : (96, 96, 72)
+BATCH_SIZE   : 16
+Work dir     : /home/cosma/tms_fmri_project_20260401_143445
+✓ Connected — top-level entries under s3:///scratch/cosma/openneuro.org/ds005498: 153
+Raw shape: (152, 51)
+  participant_id  Gender  ...  L-aMFG Scan ( Minus32x42x34)  Resting Scan
+0   sub-NTHC1001       2  ...                             0             1
+1   sub-NTHC1003       2  ...                             0             1
+2   sub-NTHC1009       2  ...                             1             1
+
+[3 rows x 51 columns]
+
+Group distribution:
+group
+NTHC    46
+NTS     43
+NIS     34
+TEHC    29
+Name: count, dtype: int64
+
+Sex numeric distribution:
+sex_num
+0.0    93
+1.0    58
+0.5     1
+Name: count, dtype: int64
+Traceback (most recent call last):
+  File "/home/cosma/tms-fmri-classifier-narval.py", line 187, in <module>
+    test_size=TEST_FRAC,
+              ^^^^^^^^^
+NameError: name 'TEST_FRAC' is not defined

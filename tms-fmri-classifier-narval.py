@@ -31,8 +31,11 @@ import torch.optim as optim
 
 from monai.utils import set_determinism
 from monai.networks.nets import DenseNet121
+from monai.transforms import RandGaussianNoised, RandFlipd
 
 from sklearn.model_selection import train_test_split
+
+import nilearn.plotting as plotting
 
 # %%
 # seeds
@@ -77,7 +80,7 @@ LABEL_MAP = {g: i for i, g in enumerate(GROUPS)}
 # hyperparams updated for Cluster Compute (16GB+ VRAM)
 TARGET_SHAPE = (96, 96, 72) # double spatial res
 BATCH_SIZE   = 16           # larger batch for stable norm
-N_EPOCHS     = 60
+N_EPOCHS     = 150
 LR           = 1e-4
 
 NUM_WORKERS  = 8
@@ -503,6 +506,8 @@ class SimpleTMSDataset(Dataset):
 # Define training augmentations
 train_transforms = Compose([
     RandGaussianNoised(keys=["volume"], prob=0.5, mean=0.0, std=0.1),
+    RandFlipd(keys=["volume"], prob=0.5, spatial_axis=0), # randomly flip left/right
+    RandFlipd(keys=["volume"], prob=0.5, spatial_axis=1), # randomly flip front/back
     RandAffined(
         keys=["volume"], 
         prob=0.5, 
@@ -529,6 +534,19 @@ test_loader = DataLoader(test_ds, batch_size=BATCH_SIZE, shuffle=False, num_work
 
 print(f"Ready to train with {len(train_ds)} train subjects and {len(test_ds)} test subjects")
 
+sample_batch = next(iter(train_loader))
+sample_img = sample_batch["volume"][0, 0].cpu().numpy() # Grab first image in batch
+
+# Plot the middle horizontal (axial) slice
+mid_slice = sample_img.shape[2] // 2
+
+plt.figure(figsize=(6, 6))
+plt.imshow(sample_img[:, :, mid_slice], cmap='gray')
+plt.title('Preprocessed Mid-Axial Slice')
+plt.axis('off')
+plt.savefig(RESULTS_DIR / "preprocessed_sample.png", dpi=300)
+plt.close()
+
 # %% [markdown]
 # ## 2. Model Setup
 
@@ -549,6 +567,9 @@ print("Model, loss function, and optimizer initialized.")
 # ## 3. Training Loop
 
 # %%
+history_train_loss = []
+history_test_acc = []
+
 print("Starting training...")
 
 best_acc = 0
@@ -587,6 +608,8 @@ for epoch in range(N_EPOCHS):
             correct += (predicted == labels).sum().item()
             
     test_acc = correct / total
+    history_train_loss.append(epoch_loss / len(train_loader))
+    history_test_acc.append(test_acc)
     
     # print update every 5 epochs / on first epoch
     if (epoch + 1) % 5 == 0 or epoch == 0:
@@ -605,6 +628,18 @@ print(f"Best model weights saved to: {RESULTS_DIR / 'best_model.pth'}")
 
 # %%
 # --- 4. Confusion Matrix Evaluation ---
+
+plt.figure(figsize=(10, 5))
+plt.plot(history_train_loss, label='Train Loss', color='red', linewidth=2)
+plt.plot(history_test_acc, label='Test Accuracy', color='blue', linewidth=2)
+plt.title('Model Training History', fontsize=14)
+plt.xlabel('Epoch', fontsize=12)
+plt.ylabel('Metric Value', fontsize=12)
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.savefig(RESULTS_DIR / "loss_acc_curve.png", dpi=300)
+plt.close()
 
 from sklearn.metrics import confusion_matrix
 
@@ -648,6 +683,76 @@ plt.tight_layout()
 # Save and show
 plt.savefig(RESULTS_DIR / "confusion_matrix.png", dpi=300)
 plt.show()
+
+# ==============================================================================
+# REPORT VISUALIZATION: Average Responses per Cohort 
+# ==============================================================================
+import os
+import nilearn.plotting as plotting
+
+print("\nGenerating Average fMRI Maps per Cohort...")
+
+# The TA suggested focusing on a specific site. We will use the one you synced.
+target_task = "stimMinus32x42x34" 
+
+# Get unique groups (NTHC, NTS, NIS, TEHC)
+groups = participants_df['group'].dropna().unique()
+
+for group in groups:
+    # Get participant IDs for this group
+    subs = participants_df[participants_df['group'] == group]['participant_id'].tolist()
+    
+    group_arrays = []
+    ref_img = None
+    
+    for sub in subs:
+        # Construct exact path based on your S3 download structure in local scratch
+        filepath = f"{pfx}/{sub}/ses-1/func/{sub}_ses-1_task-{target_task}_bold.nii.gz"
+        
+        # Check if file exists (some subjects might not have this specific scan)
+        if os.path.exists(filepath):
+            try:
+                img = nib.load(filepath)
+                data = img.get_fdata()
+                
+                # BOLD files are often 4D (Time Series). If so, we average across time (axis=3)
+                # to get a single 3D volume representing the mean response.
+                if len(data.shape) == 4:
+                    data = np.mean(data, axis=3)
+                    
+                group_arrays.append(data)
+                
+                # Save the first valid image as a reference for the mapping coordinates (affine)
+                if ref_img is None:
+                    ref_img = img
+            except Exception as e:
+                pass # Skip corrupted or unreadable files
+
+    # Once all subjects in the group are collected, average and plot them
+    if len(group_arrays) > 0 and ref_img is not None:
+        # Average all subjects in this group together
+        avg_data = np.mean(group_arrays, axis=0)
+        
+        # Create a new NIfTI image with the averaged data
+        avg_nifti = nib.Nifti1Image(avg_data, affine=ref_img.affine)
+        
+        # Save the plot using nilearn
+        out_path = RESULTS_DIR / f"average_map_{group}_{target_task}.png"
+        
+        plotting.plot_stat_map(
+            avg_nifti,
+            title=f"Avg Response: {group}\n({target_task}, n={len(group_arrays)})",
+            display_mode='ortho',     # Shows Axial, Sagittal, and Coronal views
+            annotate=True,
+            draw_cross=False,         # Keeps the image clean
+            output_file=str(out_path)
+        )
+        print(f"  -> Saved {out_path.name} (Averaged {len(group_arrays)} scans)")
+    else:
+        print(f"  -> No {target_task} scans found for group {group}")
+
+# ==============================================================================
+print("Script complete!")
 
 # %% [markdown]
 # notes: try doing visualization of what data looks like before going into model

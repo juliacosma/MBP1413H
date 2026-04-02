@@ -1,0 +1,377 @@
+created virtual environment CPython3.11.5.final.0-64 in 2298ms
+  creator CPython3Posix(dest=/home/cosma/tms_env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/cosma/.local/share/virtualenv)
+    added seed packages: pip==23.2.1, setuptools==68.0.0, wheel==0.41.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: pip in ./tms_env/lib/python3.11/site-packages (23.2.1)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pip-26.0.1+computecanada-py3-none-any.whl
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.2.1
+    Uninstalling pip-23.2.1:
+      Successfully uninstalled pip-23.2.1
+Successfully installed pip-26.0.1+computecanada
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8755a79d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/monai/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873db5750>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/monai/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873db5e90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/monai/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873db6950>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/monai/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873db7410>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/monai/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/monai-1.5.0+computecanada-py3-none-any.whl
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e058d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/s3fs/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e05ed0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/s3fs/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e06790>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/s3fs/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87418ee50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/s3fs/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8742badd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/s3fs/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/s3fs-2026.2.0+computecanada-py3-none-any.whl
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8741ac510>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/nibabel/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8741ad910>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/nibabel/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8741aeb50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/nibabel/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8741afad0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/nibabel/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f874198e10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/nibabel/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/nibabel-5.3.2+computecanada-py3-none-any.whl
+Requirement already satisfied: pandas in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (2.2.1+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87420d650>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/seaborn/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87420e150>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/seaborn/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87420f010>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/seaborn/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87420e990>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/seaborn/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87421cbd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/seaborn/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/seaborn-0.13.2+computecanada-py3-none-any.whl
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8742388d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/scikit-learn/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87404d390>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/scikit-learn/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f874066250>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/scikit-learn/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8740732d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/scikit-learn/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8740ae4d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/scikit-learn/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scikit_learn-1.8.0+computecanada-cp311-cp311-linux_x86_64.whl
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873debe10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/tqdm/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e00750>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/tqdm/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d79ad0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/tqdm/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873db6bd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/tqdm/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873dfc1d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/tqdm/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tqdm-4.67.3+computecanada-py3-none-any.whl
+Requirement already satisfied: scipy in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (1.13.1+computecanada)
+Requirement already satisfied: numpy<3.0,>=1.24 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from monai) (1.26.4+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e27250>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/torch/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e279d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/torch/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e34390>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/torch/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e34dd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/torch/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e35b90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/torch/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/torch-2.6.0+computecanada-cp311-cp311-linux_x86_64.whl (from monai)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e00c10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/filelock/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873debed0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/filelock/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8741af050>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/filelock/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8741af950>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/filelock/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8741acb90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/filelock/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/filelock-3.25.2+computecanada-py3-none-any.whl (from torch<2.7.0,>=2.4.1->monai)
+Requirement already satisfied: typing-extensions>=4.10.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/ipykernel/2024a/lib/python3.11/site-packages (from torch<2.7.0,>=2.4.1->monai) (4.12.2+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c5ae10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/networkx/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c5b410>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/networkx/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c5bbd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/networkx/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e38510>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/networkx/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873e38ed0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/networkx/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.6.1+computecanada-py3-none-any.whl (from torch<2.7.0,>=2.4.1->monai)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c86590>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jinja2/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c86e90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jinja2/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c87990>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jinja2/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c881d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jinja2/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c88cd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jinja2/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jinja2-3.1.6+computecanada-py3-none-any.whl (from torch<2.7.0,>=2.4.1->monai)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873c86250>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/fsspec/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ca0a50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/fsspec/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ca1310>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/fsspec/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ca1a50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/fsspec/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ca25d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/fsspec/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2026.3.0+computecanada-py3-none-any.whl (from torch<2.7.0,>=2.4.1->monai)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ce1290>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/sympy/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ce1b10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/sympy/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ce2190>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/sympy/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ce2b10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/sympy/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ce3650>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/sympy/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/sympy-1.13.1+computecanada-py3-none-any.whl (from torch<2.7.0,>=2.4.1->monai)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from sympy==1.13.1->torch<2.7.0,>=2.4.1->monai) (1.3.0+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d00210>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiobotocore/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d00910>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiobotocore/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d01250>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiobotocore/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d01d50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiobotocore/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d02850>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiobotocore/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aiobotocore-3.1.3+computecanada-py3-none-any.whl (from s3fs)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2026.2.0+computecanada-py3-none-any.whl (from torch<2.7.0,>=2.4.1->monai)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d0fa90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohttp/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d10190>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohttp/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d10710>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohttp/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d10e10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohttp/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d11610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohttp/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/aiohttp-3.13.3+computecanada-cp311-cp311-linux_x86_64.whl (from s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d0f610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aioitertools/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d23610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aioitertools/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d23cd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aioitertools/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d1c4d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aioitertools/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d1cb90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aioitertools/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aioitertools-0.13.0+computecanada-py3-none-any.whl (from aiobotocore<4.0.0,>=2.19.0->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d1fe90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/botocore/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d2c550>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/botocore/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d2cd90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/botocore/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d1d610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/botocore/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d1cc10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/botocore/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/botocore-1.42.49+computecanada-py3-none-any.whl (from aiobotocore<4.0.0,>=2.19.0->s3fs)
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from aiobotocore<4.0.0,>=2.19.0->s3fs) (2.9.0.post0+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ce1d10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jmespath/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873ce0a10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jmespath/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d3b050>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jmespath/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d3b890>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jmespath/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d3bf50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/jmespath/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/jmespath-1.1.0+computecanada-py3-none-any.whl (from aiobotocore<4.0.0,>=2.19.0->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bf850>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/multidict/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bfdd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/multidict/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bc350>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/multidict/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d3b650>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/multidict/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d3b050>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/multidict/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/multidict-6.7.1+computecanada-cp311-cp311-linux_x86_64.whl (from aiobotocore<4.0.0,>=2.19.0->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873749d50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/wrapt/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d0d2d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/wrapt/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d3be10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/wrapt/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bd850>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/wrapt/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87374a610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/wrapt/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/wrapt-2.1.2+computecanada-cp311-cp311-linux_x86_64.whl (from aiobotocore<4.0.0,>=2.19.0->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d3bad0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohappyeyeballs/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873761310>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohappyeyeballs/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873761c10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohappyeyeballs/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737623d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohappyeyeballs/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873762c10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiohappyeyeballs/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aiohappyeyeballs-2.6.1+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87376e810>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiosignal/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87376ee50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiosignal/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87376f7d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiosignal/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873774290>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiosignal/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d0d2d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/aiosignal/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/aiosignal-1.4.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873775d90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/attrs/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873776390>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/attrs/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873776ad0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/attrs/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873777610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/attrs/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d0fe50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/attrs/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/attrs-26.1.0+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87376fad0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/frozenlist/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87377c0d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/frozenlist/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87377fd10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/frozenlist/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737843d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/frozenlist/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873784b50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/frozenlist/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/frozenlist-1.8.0+computecanada-cp311-cp311-linux_x86_64.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379c4d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/propcache/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379cd90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/propcache/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379d950>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/propcache/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379e110>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/propcache/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379e8d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/propcache/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/propcache-0.4.1+computecanada-py3-none-any.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737b0610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/yarl/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379f010>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/yarl/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379e350>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/yarl/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379dd50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/yarl/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379c690>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/yarl/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/yarl-1.23.0+computecanada-cp311-cp311-linux_x86_64.whl (from aiohttp!=4.0.0a0,!=4.0.0a1->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379d9d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/urllib3/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87379e110>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/urllib3/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737baa90>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/urllib3/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bb210>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/urllib3/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bba10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/urllib3/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/urllib3-2.6.3+computecanada-py3-none-any.whl (from botocore<1.42.50,>=1.41.0->aiobotocore<4.0.0,>=2.19.0->s3fs)
+Requirement already satisfied: six>=1.5 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from python-dateutil<3.0.0,>=2.1->aiobotocore<4.0.0,>=2.19.0->s3fs) (1.16.0+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bfc50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/idna/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bf750>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/idna/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737ed150>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/idna/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737ed790>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/idna/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737ee0d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/idna/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/idna-3.11+computecanada-py3-none-any.whl (from yarl<2.0,>=1.17.0->aiohttp!=4.0.0a0,!=4.0.0a1->s3fs)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737edf10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/importlib-resources/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737ed150>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/importlib-resources/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737bf290>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/importlib-resources/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737f4c50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/importlib-resources/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8737f5410>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/importlib-resources/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/importlib_resources-6.5.2+computecanada-py3-none-any.whl (from nibabel)
+Requirement already satisfied: packaging>=20 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from nibabel) (24.1+computecanada)
+Requirement already satisfied: pytz>=2020.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from pandas) (2024.1+computecanada)
+Requirement already satisfied: tzdata>=2022.7 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from pandas) (2024.1+computecanada)
+Requirement already satisfied: matplotlib!=3.6.1,>=3.4 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from seaborn) (3.9.0+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873843450>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/joblib/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873843cd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/joblib/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873648c50>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/joblib/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873649410>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/joblib/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87364a090>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/joblib/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/joblib-1.5.3+computecanada-py3-none-any.whl (from scikit-learn)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87365d110>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/threadpoolctl/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87365dbd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/threadpoolctl/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87365e4d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/threadpoolctl/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f87364b0d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/threadpoolctl/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f873d026d0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/threadpoolctl/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/threadpoolctl-3.6.0+computecanada-py3-none-any.whl (from scikit-learn)
+Requirement already satisfied: contourpy>=1.0.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (1.2.1+computecanada)
+Requirement already satisfied: cycler>=0.10 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (0.12.1+computecanada)
+Requirement already satisfied: fonttools>=4.22.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (4.53.0+computecanada)
+Requirement already satisfied: kiwisolver>=1.3.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (1.4.5+computecanada)
+Requirement already satisfied: pillow>=8 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (10.3.0+computecanada)
+Requirement already satisfied: pyparsing>=2.3.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn) (3.1.2+computecanada)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8736df610>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/markupsafe/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8736dfdd0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/markupsafe/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8736e4890>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/markupsafe/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8736e5150>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/markupsafe/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x14f8736e5b10>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/markupsafe/
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/markupsafe-3.0.3+computecanada-cp311-cp311-linux_x86_64.whl (from jinja2->torch<2.7.0,>=2.4.1->monai)
+Installing collected packages: wrapt, urllib3, tqdm, threadpoolctl, sympy, propcache, networkx, multidict, MarkupSafe, joblib, jmespath, importlib-resources, idna, fsspec, frozenlist, filelock, attrs, aioitertools, aiohappyeyeballs, yarl, scikit-learn, nibabel, jinja2, botocore, aiosignal, torch, seaborn, aiohttp, monai, aiobotocore, s3fs
+  Attempting uninstall: sympy
+    Found existing installation: sympy 1.12.1+computecanada
+    Not uninstalling sympy at /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/scipy-stack/2024a/lib/python3.11/site-packages, outside environment /home/cosma/tms_env
+    Can't uninstall 'sympy'. No files were found to uninstall.
+
+Successfully installed MarkupSafe-3.0.3+computecanada aiobotocore-3.1.3+computecanada aiohappyeyeballs-2.6.1+computecanada aiohttp-3.13.3+computecanada aioitertools-0.13.0+computecanada aiosignal-1.4.0+computecanada attrs-26.1.0+computecanada botocore-1.42.49+computecanada filelock-3.25.2+computecanada frozenlist-1.8.0+computecanada fsspec-2026.2.0+computecanada idna-3.11+computecanada importlib-resources-6.5.2+computecanada jinja2-3.1.6+computecanada jmespath-1.1.0+computecanada joblib-1.5.3+computecanada monai-1.5.0+computecanada multidict-6.7.1+computecanada networkx-3.6.1+computecanada nibabel-5.3.2+computecanada propcache-0.4.1+computecanada s3fs-2026.2.0+computecanada scikit-learn-1.8.0+computecanada seaborn-0.13.2+computecanada sympy-1.13.1+computecanada threadpoolctl-3.6.0+computecanada torch-2.6.0+computecanada tqdm-4.67.3+computecanada urllib3-2.6.3+computecanada wrapt-2.1.2+computecanada yarl-1.23.0+computecanada
+Data and results will be saved to: /home/cosma/tms_fmri_project
+Device       : cuda
+TARGET_SHAPE : (96, 96, 72)
+BATCH_SIZE   : 16
+Work dir     : /home/cosma/tms_fmri_project
+  [s3_ls] openneuro.org/ds005498: Connect timeout on endpoint URL: "https://s3.amazonaws.com/openneuro.org?list-type=2&prefix=ds005498%2F&delimiter=%2F&encoding-type=url"
+✓ Connected — top-level entries under s3://openneuro.org/ds005498: 0
+Traceback (most recent call last):
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/connector.py", line 1298, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohappyeyeballs/impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohappyeyeballs/impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/python/3.11.5/lib/python3.11/asyncio/selector_events.py", line 634, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/client.py", line 734, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/connector.py", line 1239, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/connector.py", line 1611, in _create_direct_connection
+    raise last_exc
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/connector.py", line 1295, in _wrap_create_connection
+    async with ceil_timeout(
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/python/3.11.5/lib/python3.11/asyncio/timeouts.py", line 111, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/httpsession.py", line 230, in send
+    response = await session.request(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/client.py", line 779, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiohttp/client.py", line 738, in _connect_and_send_request
+    raise ConnectionTimeoutError(
+aiohttp.client_exceptions.ConnectionTimeoutError: Connection timeout to host https://s3.amazonaws.com/openneuro.org/ds005498/participants.tsv
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cosma/tms-fmri-classifier-narval.py", line 126, in <module>
+    participants_df = s3_read_tsv(fs, f"{pfx}/participants.tsv")
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms-fmri-classifier-narval.py", line 105, in s3_read_tsv
+    with fs.open(path, "rb") as f:
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/fsspec/spec.py", line 1349, in open
+    f = self._open(
+        ^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/s3fs/core.py", line 807, in _open
+    return S3File(
+           ^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/s3fs/core.py", line 2369, in __init__
+    super().__init__(
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/fsspec/spec.py", line 1923, in __init__
+    self.size = self.details["size"]
+                ^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/fsspec/spec.py", line 1936, in details
+    self._details = self.fs.info(self.path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/fsspec/asyn.py", line 118, in wrapper
+    return sync(self.loop, func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/fsspec/asyn.py", line 103, in sync
+    raise return_result
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/fsspec/asyn.py", line 56, in _runner
+    result[0] = await coro
+                ^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/s3fs/core.py", line 1545, in _info
+    out = await self._call_s3(
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/s3fs/core.py", line 451, in _call_s3
+    return await _error_wrapper(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/s3fs/core.py", line 214, in _error_wrapper
+    raise err
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/s3fs/core.py", line 168, in _error_wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/context.py", line 36, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/client.py", line 406, in _make_api_call
+    http, parsed_response = await self._make_request(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/client.py", line 432, in _make_request
+    return await self._endpoint.make_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/endpoint.py", line 120, in _send_request
+    while await self._needs_retry(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/endpoint.py", line 280, in _needs_retry
+    responses = await self._event_emitter.emit(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/hooks.py", line 68, in _emit
+    response = await resolve_awaitable(handler(**kwargs))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/_helpers.py", line 6, in resolve_awaitable
+    return await obj
+           ^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/retryhandler.py", line 107, in _call
+    if await resolve_awaitable(self._checker(**checker_kwargs)):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/_helpers.py", line 6, in resolve_awaitable
+    return await obj
+           ^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/retryhandler.py", line 126, in _call
+    should_retry = await self._should_retry(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/retryhandler.py", line 165, in _should_retry
+    return await resolve_awaitable(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/_helpers.py", line 6, in resolve_awaitable
+    return await obj
+           ^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/retryhandler.py", line 174, in _call
+    checker(attempt_number, response, caught_exception)
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/botocore/retryhandler.py", line 247, in __call__
+    return self._check_caught_exception(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/botocore/retryhandler.py", line 416, in _check_caught_exception
+    raise caught_exception
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/endpoint.py", line 201, in _do_get_response
+    http_response = await self._send(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/endpoint.py", line 303, in _send
+    return await self.http_session.send(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cosma/tms_env/lib/python3.11/site-packages/aiobotocore/httpsession.py", line 276, in send
+    raise ConnectTimeoutError(endpoint_url=request.url, error=e)
+botocore.exceptions.ConnectTimeoutError: Connect timeout on endpoint URL: "https://s3.amazonaws.com/openneuro.org/ds005498/participants.tsv"
